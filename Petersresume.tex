@@ -1,0 +1,280 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2009 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+% GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
+
+\documentclass[letterpaper,10pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black     % can put red here to visualize the links
+}
+\urlstyle{same}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+\definecolor{darkGrey}{gray}{.35}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{Cyan}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+%\newcommand{\resheading}[1]{{\large \colorbox{darkGrey}{\color{white}\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
+
+\begin{document}
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{\LARGE Peter Solfest} & pmsolfest@gmail.com\\
+	{\footnotesize 7608 Peltier Lake Drive, Lino Lakes, MN 55414} & phone: (651) 325-8903 \\
+	\end{tabular*}
+\\
+\vspace{0.1in}}
+
+% CHANGE HEADER SOURCE HERE
+\mywebheader
+
+%%-------------SUMMARY-----------------%
+\resheading{Summary}
+  
+  Recent graduate with a strong background in applied and computational mathematics.
+  Pursuing a career in which to leverage these numerical skills to improve
+  and develop mathematical models and software.
+
+  \vspace{0.1in}
+%-----------EDUCATION-----------------%
+\resheading{Education}
+	\begin{itemize}
+  \item
+			\ressubheading{\href{www.umn.edu}{University of Minnesota - Twin Cities}}{Minneapolis, MN}{Ph.D. Scientific Computation (withdrawn)}{Aug. 2014 -- Feb. 2015}
+			{ \footnotesize
+			\begin{itemize}
+					\resitem{Advisor: Dr. Yousef Saad} 
+				\end{itemize}
+				}
+		\item
+			\ressubheading{\href{www.mtu.edu}{Michigan Technological University}}{Houghton, MI}{M.S. Applied Mathematics; GPA: 4.00}{Aug. 2012 -- June 2014}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Advisor: Dr. Jiguang Sun} 
+				\end{itemize}
+				}
+		\item
+			\ressubheading{\href{www.mtu.edu}{Michigan Technological University}}{Houghton, MI}{B.S. in Physics and Applied/Computational Mathematics; GPA:3.94}{Aug. 2008 -- Apr. 2012}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Graduated Summa Cum Laude} 
+				\end{itemize}
+				}
+\begin{comment}%high school eduation. Not included
+		\item
+			\ressubheading{\href{http://www.isd12.org/chs/}{Centennial High School}}{Circle Pines, MN}{GPA:3.79}{Sep. 2003 - June 2008}
+				{ \footnotesize
+				\begin{itemize}
+				\resitem{Graduated with honors}
+				\end{itemize}
+				}
+\end{comment}
+	\end{itemize} % End Education list
+
+%---------END EDUCATION------------%
+
+%---------BEGIN RESEARCH EXPERIENCE--------%
+\resheading{Research Experience}
+\begin{itemize}
+\item%Senior research
+	\ressubheading{Senior Research (BS degree)}{Houghton, MI}{Computational analysis of spectra arising from Mo doped Tungstenite}{2011 - 2012}
+	{\footnotesize
+	\begin{itemize}
+		\resitem{Advisor: Dr. John Jaszczak}
+%		\resitem{Compared to experimentally obtained spectra}
+	\end{itemize}
+	}
+\item%LPSA
+	\ressubheading{Lunar and Planetary Space Academy}{NASA - Goddard, MD}{Instrumentation development for space based Gamma Ray Spectroscopy}{Summer 2011}
+	{\footnotesize
+	\begin{itemize}
+		\resitem{Mentor: Dr. Ann Parsons}
+%		\resitem{Developed calibration code for an active shielding detector}
+%		\resitem{Worked on characterization of Neutron Source}	
+%		\resitem{Participated in field studies of basalt formations in the scablands in Washington State}	
+	\end{itemize}
+	}
+\item%Dr. Yap's Lab
+	\ressubheading{Yap Research Group}{Michigan Tech}{Boron Nitride Nanotube (BNNT) synthesis and application}{Summer 2010}
+	{\footnotesize
+	\begin{itemize}
+	%	\resitem{Graduate Student lead researcher: Chee Huei Lee}
+	%	\resitem{Development of techniques to synthesize carbon-doped BNNTs}
+%		\resitem{Development of solid state radiation detector based upon BNNT substrate}
+		\resitem{Funding provided by Michigan Space Grant Consortium}
+	\end{itemize}
+	}
+\end{itemize}
+%---------END RESEARCH EXPERIENCE--------%
+
+%---------BEGIN WORK EXPERIENCE--------%
+\resheading{Work Experience}
+\begin{itemize}
+\item%calculus instructor
+	\ressubheading{Calculus Instructor}{Michigan Tech Dept. of Mathematics}{Calculus 1 and 2}{Jan 2013 -- June 2014 (4 semesters)}
+	{\footnotesize
+	\begin{itemize}
+		\resitem{Responsibilities: Lecture, Grade, lead study sessions, write exams}
+    \resitem{Calc 1 (Spring 2013 - Spring 2014), Calc 2 (Summer 2014)}
+	\end{itemize}
+	}
+%\begin{comment}	
+\item%physics TA
+	\ressubheading{Lab TA}{Michigan Tech}{Introductory Mechanics, Electronics, Mathematica}{Aug 2009 -- Apr. 2012}
+	{\footnotesize
+	\begin{itemize}
+		\resitem{Responsibilities: grade labs; lead lab sections; assist students with Mathematica}
+		\resitem{Mathlab (Aug 2009 - Apr 2011), Mechanics (Aug 2010 - Dec 2011), Electronics (Jan 2012 - May 2012)}
+%		\resitem{Both semesters mid-term student evaluations rated me above 4.6 out of 5 as an instructor}
+	\end{itemize}
+	}
+\begin{comment}	
+\item%mathlab LC
+	\ressubheading{MathLab Lab Consultant}{Michigan Tech Dept. of Mathematical Sciences}{Calculus 1,2, and 3}{Jan. 2009 -- Apr. 2011}
+	{\footnotesize
+	\begin{itemize}
+%		\resitem{At Michigan Tech Mathlab supplements calculus classes by having the students perform mathematics similar to their class using Mathematica}
+	%	\resitem{Responsibilities: Help students with the labs in Mathematica; Help students with related calculus questions; grade labs}
+		\resitem{8 to 15 hours per week}
+	\end{itemize}
+	}
+\end{comment}
+\end{itemize}
+%---------END WORK EXPERIENCE--------%
+
+%---------BEGIN SKILLS-----------%
+\resheading{Skills}
+\begin{itemize}
+	\resitem{\textbf{Software:} \textsc{matlab}, GNU Octave, Linux, \LaTeX, Mathematica, git, BASH}
+	\resitem{\textbf{Programming Languages:} C, Python}
+\end{itemize}
+%----------END SKILLS-----------%
+
+%---------BEGIN ACHIEVEMENTS---------%
+\resheading{Achievements}
+\begin{itemize}
+\item
+\ressubheading{Outstanding Teaching Award}{Michigan Tech Dept. of Mathematics}{Graduate Level}{2014}
+\item
+\ressubheading{Co-Recipient of Ian W. Shepherd award}{Michigan Tech Dept. of Pysics}{"presented each year to the most outstanding physics graduate(s)"}{2012}
+\item
+\ressubheading{Departmental Scholar}{Michigan Tech Dept. of Pysics}{}{2011}
+
+%\item
+%	\ressubheading{Certificate of Merit}{Dept. of Mathematical Sciences}{For my performance in the Applied Vector/Tensor Analysis course}{Dec. 2011}
+\end{itemize}
+%---------END ACHIEVEMENTS-----------%
+
+%---------BEGIN EXTRA CURRICULARS---------%
+\resheading{Extra Curricular Activities}
+\begin{itemize}
+\item
+	\ressubheading{Broomball}{}{Player (2009 - 2014) and Team Captain (2011-2014)}{}
+\item
+  \ressubheading{SPS Member}{}{Public outreach explaining physics concepts to elementary students}{}
+\end{itemize}
+%---------END EXTRA CURRICULARS-----------%
+
+
+\end{document}
+
+
+
+
+%Only Print References If Requested!  Maybe even put it in it's own page.  Must have same heading as first page.
+%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\myheader
+\resheading{References}
+	\begin{center}
+		\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}  l l l }
+			
+		\end{tabular*}
+	\end{center}
+	
+%\end{document}
+
+
+% ADDITIONAL WORK EXPERIENCE NOT INCLUDED	OR OLD
+
+\item%Burger King
+	\ressubheading{Burger King}{Forest Lake, MN}{Crew Member}{Apr. 2006 -- Aug. 2008\\June 2009 -- Aug. 2009}
+	{\footnotesize
+	\begin{itemize}
+		\resitem{Supervisors: Chad Herbert, Colette Vincent}
+	\end{itemize}
+	}	
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% GENERAL RESUME NOTES %
+%%%%%%%%%%%%%%%%%%%%%%%%
+Need to brush up on the skills section?  Here are some really good ideas:
+
+- Communication: The ability to express and interpret ideas and convey knowledge. 
+Skills like speaking effectively, writing concisely, listening attentively, expressing ideas, 
+reporting information, editing, interviewing, and facilitating group discussion. 
+ 
+- Research and Planning: The ability to search for specific knowledge and formulate a 
+program for a definite course of action. Skills like forecasting, predicting, identifying 
+issues, finding alternatives, gathering information, solving problems, setting goals, 
+extracting information, and developing strategies. 
+ 
+- Human Relations: The ability to apply interpersonal skills to resolve conflict, relate to 
+people, and help people. Skills like providing support for others, listening, delegating 
+with respect, representing others, asserting, developing rapport, and perceiving 
+feelings. 
+ 
+- Management, Organization, Leadership: The ability to supervise others and guide 
+individuals and groups towards the completion of tasks. Skills like managing groups, 
+selling ideas, making decisions, managing conflict, coordinating tasks, teaching, 
+enlisting help. 
+
+Source: 
+http://www.squawkfox.com/2009/03/08/6-action-words-that-make-your-resume-rock/
+
+Other Resources: 
+http://www.tvmier.com/Resume_Education.html
+
