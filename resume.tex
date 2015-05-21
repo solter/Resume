@@ -8,7 +8,7 @@
 
 % GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 %-----------------------------------------------------------
 \usepackage{latexsym}
@@ -41,7 +41,8 @@
 %-----------------------------------------------------------
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{{\large \colorbox{Cyan}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+%\newcommand{\resheading}[1]{{\large \colorbox{Cyan}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\resheading}[1]{{\large \textbf{#1}}}
 %\newcommand{\resheading}[1]{{\large \colorbox{darkGrey}{\color{white}\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
 \newcommand{\ressubheading}[4]{
 \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
@@ -75,22 +76,22 @@
   
   Recent graduate with a strong background in applied and computational mathematics,
   and a solid understanding of physics.
-  Pursuing a career which leverages these skills to develop
-  and improve mathematical models and software utilizing numeric techniques.
+  Pursuing a career which leverages these skills while continuing to develop them.
+%  and improve mathematical models and software utilizing numeric techniques.
 
   \vspace{0.1in}
 %-----------EDUCATION-----------------%
 \resheading{Education}
 	\begin{itemize}
-  \item
-			\ressubheading{\href{www.umn.edu}{University of Minnesota - Twin Cities}}{Minneapolis, MN}{Ph.D. Scientific Computation; GPA: 4.00 \, \, (no longer pursuing)}{Aug. 2014 -- Mar. 2015}
-			{ \footnotesize
-			\begin{itemize}
-					\resitem{Advisor: Dr. Yousef Saad} 
-				\end{itemize}
-				}
+%  \item
+%			\ressubheading{\href{www.umn.edu}{University of Minnesota - Twin Cities}}{Minneapolis, MN}{Ph.D. Scientific Computation; GPA: 4.00 \, \, (no longer pursuing)}{Aug. 2014 -- Mar. 2015}
+%			{ \footnotesize
+%			\begin{itemize}
+%					\resitem{Advisor: Dr. Yousef Saad} 
+%				\end{itemize}
+%				}
 		\item
-			\ressubheading{\href{www.mtu.edu}{Michigan Technological University}}{Houghton, MI}{M.S. Applied Mathematics; GPA: 4.00}{Aug. 2012 -- June 2014}
+			\ressubheading{\href{www.mtu.edu}{Michigan Technological University}}{Houghton, MI}{M.S. in Applied Mathematics; GPA: 4.00}{Aug. 2012 -- June 2014}
 				{ \footnotesize
 				\begin{itemize}
 					\resitem{Advisor: Dr. Jiguang Sun} 
@@ -153,6 +154,14 @@
 %---------BEGIN WORK EXPERIENCE--------%
 \resheading{Work Experience}
 \begin{itemize}
+\item
+    \ressubheading{Research Assistant}{University of Minnesota}{Dept. of Computer Science}{July 2014-- Mar. 2015}
+	{\footnotesize
+	\begin{itemize}
+    \resitem{Advisor: Dr. Yousef Saad}
+		\resitem{Responsibilities: software development, prepare progress reports}
+	\end{itemize}
+  }
 \item%calculus instructor
 	\ressubheading{Calculus Instructor}{Michigan Tech Dept. of Mathematics}{Calculus 1 and 2}{Jan 2013 -- June 2014 (4 semesters)}
 	{\footnotesize
@@ -188,8 +197,8 @@
 %---------BEGIN SKILLS-----------%
 \resheading{Skills}
 \begin{itemize}
-	\resitem{\textbf{Software:} GNU Octave, Linux, \LaTeX, Mathematica, git, BASH}
-	\resitem{\textbf{Programming Languages:} \textsc{matlab}, C, Java, Python}
+	\resitem{\textbf{Software:} GNU Octave, Linux, \LaTeX, BASH, Mathematica, git}
+	\resitem{\textbf{Programming Languages:} \textsc{matlab}, C, Python, Java}
 \end{itemize}
 %----------END SKILLS-----------%
 
@@ -208,6 +217,7 @@
 \end{itemize}
 %---------END ACHIEVEMENTS-----------%
 
+\end{document}
 %---------BEGIN EXTRA CURRICULARS---------%
 \resheading{Extra Curricular Activities}
 \begin{itemize}
@@ -219,7 +229,6 @@
 %---------END EXTRA CURRICULARS-----------%
 
 
-\end{document}
 
 
 
