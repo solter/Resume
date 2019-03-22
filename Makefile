@@ -1,7 +1,7 @@
 all: PetersResume.pdf
 
 #change the dependencies to switch what gets merged/created
-PetersResume.pdf: coverletter.pdf resume.pdf
+PetersResume.pdf: resume.pdf
 	pdftk $^ cat output $@
 
 %.pdf: %.tex
