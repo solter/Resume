@@ -1,0 +1,40 @@
+To whom it may concern,
+
+I have recently graduated with a master's degree from Michigan Tech in applied mathematics after
+completing a B.S. in physics and mathematics.
+I would be a great fit for the research programmer position
+at SPS Commerce given my educational background
+and strong personal interest in algorithm development.
+
+I will contribute to SPS Commerce utilizing my entire educational background.
+My B.S. and M.S. in applied mathematics has provided me with extensive experience developing
+and implementing numerical algorithms using Matlab and C.
+Furthermore my B.S. in physics has provided me a broad background
+problem solving utilizing mathematical models.
+My education and personal experience have further provided me with
+extensive experience working in a Linux environment and scripting
+jobs using BASH.
+Furthermore I find tackling new problems invigorating, and enjoy
+the process of diving into new fields of inquiry to quickly learn
+enough to contribute to the field.
+Beyond my academic background I have participated in BonzAI Brawl in which
+AIs were implemented in JAVA, as well as
+creating particle simulations using Python.
+Recently I was a research assistant at the university of MN, during which I employed
+these skills to quickly pick up and contribute to analyzing large data sets on materials.
+Beyond my technical qualifications, I have had a life long fascination with
+pushing the boundaries of humanity's capabilities.
+
+My educational background in mathematics and personal fascination
+with implementing algorithms in software will allow 
+me to approach this position with the technical skills required.
+Furthermore, having taught throughout my education along with compiling reports
+throughout my education will allow me to effectively communicate and
+collaborate with a wide variety of professionals.
+Thank you for your time and consideration, and hope to hear from you soon.
+
+
+Sincerely,
+
+Peter M. Solfest
+

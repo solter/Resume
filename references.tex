@@ -17,12 +17,12 @@
 \usepackage{verbatim}
 \usepackage[pdftex]{hyperref}
 \hypersetup{
-    colorlinks,%
+  colorlinks,%
     citecolor=black,%
     filecolor=black,%
     linkcolor=black,%
     urlcolor=black     % can put red here to visualize the links
-}
+  }
 \urlstyle{same}
 \textheight=9.0in
 \raggedbottom
@@ -41,82 +41,43 @@
 %-----------------------------------------------------------
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-%\newcommand{\resheading}[1]{{\large \colorbox{Cyan}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
-\newcommand{\resheading}[1]{{\large \colorbox{darkGrey}{\color{white}\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
-%-----------------------------------------------------------
+  %\newcommand{\resheading}[1]{{\large \colorbox{Cyan}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+  \newcommand{\resheading}[1]{{\large \colorbox{darkGrey}{\color{white}\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+    \newcommand{\ressubheading}[4]{
+      \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{#3} & \textit{#4} \\
+      \end{tabular*}\vspace{-6pt}}
+    %-----------------------------------------------------------
 
-%-----------------------------------------------------------
-%General Resume Tips
-%   No periods!  Technically, nothing in this document is a full sentence.
-%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
-%   More tips on bottom of this LaTeX document.
-%-----------------------------------------------------------
+    %-----------------------------------------------------------
+    %General Resume Tips
+    %   No periods!  Technically, nothing in this document is a full sentence.
+    %   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+    %   More tips on bottom of this LaTeX document.
+    %-----------------------------------------------------------
 
-\begin{document}
+    \begin{document}
 
-\newcommand{\mywebheader}{
-\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-	\textbf{\LARGE Peter Solfest} & pmsolfes@mtu.edu\\
-	{\footnotesize 1011 Jasper Ave, Houghton MI 49931} & phone: (651) 325-8903 \\
-	\end{tabular*}
-\\
-\vspace{0.1in}}
+    \newcommand{\mywebheader}{
+      \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+        \textbf{\LARGE Peter Solfest} & pmsolfest@gmail.com\\
+	{\footnotesize 20 S. 41st St, Apt. 58, Council Bluffs, IA 51501} & phone: (651) 325-8903 \\
+      \end{tabular*}
+    \\
+    \vspace{0.1in}}
 
-% CHANGE HEADER SOURCE HERE
-\mywebheader
+  % CHANGE HEADER SOURCE HERE
+  \mywebheader
 
-%-----------EDUCATION-----------------%
-\resheading{References}
-	\begin{itemize}
-		%\item
-    %  \ressubheading{\href{http://www-users.cs.umn.edu/~saad/}{Dr. Yousef Saad}{saad@cs.umn.edu}{Distinguished Professor at the Deprt. of Computer Science and Engineering, University of Minnesota}{612-624-7804}\\[1cm]
-		\item
-			\ressubheading{\href{http://www.mtu.edu/data-science/graduate/faculty/gowtham/}{Dr. Gowtham}}{g@mtu.edu}{Director of Research Computing, Information Technology}{906-487-3593}\\[1cm]
-			
-		\item
-		\item
-			\ressubheading{\href{http://www.mtu.edu/math/department/faculty/struthers/}{Dr. Allan A. Struthers}}{struther@mtu.edu}{Professor of Mathematical Sciences, Michigan Tech}{906-487-3541}\\[1cm]
-			
-		\item
-\ressubheading{\href{http://www.mtu.edu/math/department/faculty/sun-jiguang/}{Dr. Jiguang Sun}}{jiguangs@mtu.edu}{Associate Professor of Mathematical Sciences, Michigan Tech}{906-487-3541}\\[1cm]
-		%\item
-%\ressubheading{\href{http://www.mtu.edu/math/department/faculty/schmitz/}{Dr. Rebecca J. Schmitz}}{rjschmit@mtu.edu}{Assistant Professor of Mathematical Sciences, Michigan Tech}{906-487-3541}
-				
-	\end{itemize}
-\end{document}
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-% GENERAL RESUME NOTES %
-%%%%%%%%%%%%%%%%%%%%%%%%
-Need to brush up on the skills section?  Here are some really good ideas:
-
-- Communication: The ability to express and interpret ideas and convey knowledge. 
-Skills like speaking effectively, writing concisely, listening attentively, expressing ideas, 
-reporting information, editing, interviewing, and facilitating group discussion. 
- 
-- Research and Planning: The ability to search for specific knowledge and formulate a 
-program for a definite course of action. Skills like forecasting, predicting, identifying 
-issues, finding alternatives, gathering information, solving problems, setting goals, 
-extracting information, and developing strategies. 
- 
-- Human Relations: The ability to apply interpersonal skills to resolve conflict, relate to 
-people, and help people. Skills like providing support for others, listening, delegating 
-with respect, representing others, asserting, developing rapport, and perceiving 
-feelings. 
- 
-- Management, Organization, Leadership: The ability to supervise others and guide 
-individuals and groups towards the completion of tasks. Skills like managing groups, 
-selling ideas, making decisions, managing conflict, coordinating tasks, teaching, 
-enlisting help. 
-
-Source: 
-http://www.squawkfox.com/2009/03/08/6-action-words-that-make-your-resume-rock/
-
-Other Resources: 
-http://www.tvmier.com/Resume_Education.html
-
+  %-----------EDUCATION-----------------%
+    \resheading{References}
+    \begin{itemize}
+      \item
+        \ressubheading{\href{http://www.mtu.edu/math/department/faculty/struthers/}{Dr. Allan A. Struthers}}{struther@mtu.edu}{Professor of Mathematical Sciences, Michigan Tech}{906-487-3541}\\[1cm]
+      \item
+        \ressubheading{\href{https://www.linkedin.com/in/andrewkuck/}Andrew Kuck}{kuck@arlut.utexas.edu}{Engineering Scientist}{512-289-8566}\\[1cm]
+      \item
+        \ressubheading{Dr. Roy Calfas}{rcalfas@arlut.utexas.edu}{Research Associate}{512-835-3544}\\[1cm]
+    \end{itemize}
+    \end{document}
