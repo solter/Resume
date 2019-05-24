@@ -1,20 +1,8 @@
-(c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
-
-(c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
-
-(c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
-
-(c) 2009 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
-
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creat  ive Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
-
-
-:warning: I aim to update to using a MIT License. 
-I will update by moving past copyright notices below as they assent to the change.
-
-
 MIT License
-
+(c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+(c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+(c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+(c) 2009 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
 Copyright (c) 2019 Peter Solfest
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
