@@ -1,12 +1,21 @@
 %THIS IS A TEMPLATE FOR COVER LETTERS
 %USE IT AS A BASE
 
-\documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage[]{geometry}
+\usepackage[empty]{fullpage}
 \usepackage{parskip}
 \usepackage{datetime}
 \usepackage{graphicx}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black     % can put red here to visualize the links
+}
 \shortdate
 
 % Adjust margins
@@ -16,48 +25,84 @@
 \addtolength{\topmargin}{-.375in}
 \addtolength{\textheight}{0.75in}
 
+%-----------------------------------------------------------
+% Personal Info
+%\newcommand{\email}{\href{mailto:pmsolfest@gmail.com}{pmsolfest@gmail.com}}
+%\newcommand{\address}{{\footnotesize 20 S. 41st St, Apt. 58, Council Bluffs, IA 51501}}
+%\newcommand{\phone}{(651) 325-8903}
+% NG Info
+\newcommand{\email}{\href{mailto:peter.solfest@ngc.com}{peter.solfest@ngc.com}}
+\newcommand{\address}{{\footnotesize 1019 Bryn Mawr Dr, Papillion, NE 68046}}
+\newcommand{\phone}{(651) 325-8903}
+
 \begin{document}
 
-Peter M. Solfest\\
-7608 Peltier Lake Drive\\
-Lino Lakes, MN 55038\\
-phone: (651) 325-8903\\
-email: pmsolfest@gmail.com
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+  \textbf{\LARGE Peter Solfest} & \email \\
+    \address & \phone  %\\
+  %& Clearance Level: Secret
+\end{tabular*}
+\\
+\vspace{0.1in}}
+
+\mywebheader
 
 \today
 
 To whom it may concern,
 
-I have recently graduated with a master's degree from Michigan Tech in applied mathematics after
-completing a B.S. in physics and mathematics.
-I would be a great fit at Boeing given my educational background
-and strong personal interest in space science and software development.
+I'm a mathematician and software engineer fascinated with space science and exploration,
+able to provide a combination of technical expertise and clear communications for multiple
+stakeholders while driving process improvements.
 
-I will contribute to Boeing utilizing my entire educational background.
-My B.S. and M.S. in applied mathematics has provided me with extensive experience developing
-and implementing numerical algorithms in Matlab and C.
-Furthermore my B.S. in physics has provided me a broad background in the physics
-underlying many of the useful applications for the mathematical models.
-My education and personal experience has further provided me with
-extensive experience working in a Linux environment and scripting
-jobs using BASH.
-Furthermore I find tackling new problems invigorating, and have
-participated in programming AIs in the annual BonzAI Brawl using JAVA and
-have created particle simulations in my free time using Python among
-other projects.
-Beyond my technical qualifications, I have had a life long fascination with
-pushing the boundaries of humanity's capabilities - especially in space, which
-previously led to an internship at NASA.
+% mathematical modeling/simulations/numerical analysis/physics ed
+I have a M.S. in computational mathematics which has provided me a strong background in numerical algorithms
+and computational methods.
+This complements my B.S. in physics, providing a solid foundation in my professional career with which I have
+developed algorithms for assimilating observational data into ionospheric models, created
+modeling tools to simulate weather effects on radio communications, and helped lead the
+development efforts for maintaining and improving the Air Force's Space Weather Analysis and Forecasting System (SWAFS).
 
-My educational background in mathematics will allow 
-me to approach this position with the technical skills required
-while my undergraduate in physics and personal fascination with space
-will provide a strong foundation for the scientific principles necessary
-to understand the data.
-Furthermore, having taught throughout my education along with compiling reports
-throughout my education will allow me to effectively communicate and
-collaborate with a wide variety of professionals.
-Thank you for your time and consideration, and hope to hear from you soon.
+% data analysis + visualization
+I have found that one of the most interesting challenges when developing new models
+or creating simulations is generating visualizations that not only demonstrate the model's effectiveness, but 
+highlight only the relevant features.
+While this is rarely easy, it is immensely satisfying to accomplish.
+% communication skills
+I also take pride in my ability to concisely and clearly create documentation following the same principles,
+clearly and exactly communicating the message without containing miscellaneous tangents or
+details irrelevant for the target audience that would pull focus away from the core message.
+
+
+% quick study - ground up learning, broad interest, cutting edge
+% troubleshooting (live data feed, ops support, tech lead supporting other devs)
+When I was hired by Northrop Grumman to work on SWAFS, I began as a software
+developer implementing new models and features while maintaining the existing capabilities.
+This has included implementing the ingest of live data feeds an providing operational support.
+But my curiosity about the models themselves led to working with our university partners to improving one of our major scientific models.
+Furthermore, I have a deep drive to continuously improve everything, which led to heavy involvement
+with defining and improving the agile processes and documentation used by the team.
+This resulted in a promotion to the role of tech lead, where I have continued to perform development
+activities, but also been heavily involved in process experimentation and improvements (both for the
+SWAFS team as well as the larger SEMS enterprise), 
+designing of new features, and providing technical input for contractual updates.
+
+To better support the design and documentation of new features, I have leveraged the training opportunities
+from Northrop Grumman (through CalTech) to learn systems engineering and systems modeling, while obtaining
+industry certifications for secure software development.
+This led to designing multiple new capabilities in SWAFS using a model-based systems engineering approach.
+
+While working on SWAFS, I also worked in the NG Weather and Space Impacts Research and Development Center
+to model weather effects on radio communications.
+During this work, I set up the SharePoint and GitHub sites used by the team to improve
+the collaboration opportunities across sectors and within the team.
+These tools also enabled the usage of modern, flexible coding processes within the
+research group.
+
+% conclusion - complete package
+Along with the technical expertise and communications skills above, I can provide a strong
+sense of enthusiasm to this role. I hope to hear from you soon.
 
 
 Sincerely,
@@ -65,5 +110,4 @@ Sincerely,
 \includegraphics[height=.5in]{signature.png}
 
 Peter M. Solfest
-
 \end{document}
